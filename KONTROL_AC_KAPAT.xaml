@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.30.24.0'?>
+<nacs:ScreenWindow Topmost="False" Title="KONTROL_AC_KAPAT" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="SingleBorder" ScreenSize="800, 480" StyleName="Default" Width="800" Height="480" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:naı="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nacl="clr-namespace:Neo.ApplicationFramework.Controls.Logic;assembly=Controls" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.KONTROL_AC_KAPAT">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="480" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nac:Button Text="MANUEL" TextHorizontalAlignment="Center" RequiresTransparency="True" SymbolTransparent="False" Foreground="#FF4BACC6" FontSize="28" FontWeight="Bold" Name="m_Button1" Width="223" Height="56" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="15" Canvas.Top="405" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="White" EndColor="212, 208, 200" FillDirection="VerticalTopToBottom" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Background>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.MANUEL].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Background>
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Toggle Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.MANUEL" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.OTOMATIK" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button Text="OTOMATİK" RequiresTransparency="True" SymbolTransparent="False" Foreground="#FF4BACC6" FontSize="28" FontWeight="Bold" Name="m_Button" Width="223" Height="56" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="556" Canvas.Top="405" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="White" EndColor="212, 208, 200" FillDirection="VerticalTopToBottom" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Background>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OTOMATIK].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Background>
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.MANUEL" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Toggle Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ToggleTag" ObjectName="Tags.OTOMATIK" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+    </nac:Button>
+    <nacs1:Picture SymbolName="12312313121" Stretch="True" Name="m_Picture1" Width="181" Height="59" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" nacb:BlinkProperties.BlinkInterval="1200" Canvas.Left="312" Canvas.Top="403">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.LOGO_SEMBOL].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>False</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Show Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Show" ObjectName="SIFRE2" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.20.2296.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <naı:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                  </naı:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+    </nacs1:Picture>
+    <nacc:CircularMeter MeterAppearance="Full" LowRegionColor="#FFFF0000" LowRegionMaximum="21" HighRegionColor="#FF1E477A" HighRegionMinimum="21" HighRegionMaximum="100" ShortestPathAnimation="False" IndicatorLength="57.181150000000017" IndicatorWidth="6.8250000000000028" Maximum="100" Minimum="0" MajorTickCount="11" MinorTickCount="4" IndicatorColor="#FF4BACC6" FontSize="22" Width="195" Height="195" IndicatorMargin="27.3,27.3,27.3,27.3" RequiresTransparency="True" ForceTransparency="False" Name="m_CircularMeter2" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="591" Canvas.Top="126" Style="{nac1:StyleMarkupExtension Black}">
+      <nacc:CircularMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:CircularMeter.Resources>
+      <nacc:CircularMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_OKSIJEN_ORANI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:CircularMeter.Value>
+    </nacc:CircularMeter>
+    <nacc:CircularMeter MeterAppearance="Full" LowRegionColor="#FF1F497D" LowRegionMinimum="0" LowRegionMaximum="2" HighRegionColor="#FFFF0000" HighRegionMinimum="8" HighRegionMaximum="10" ShortestPathAnimation="False" IndicatorLength="57.181150000000017" IndicatorWidth="6.8250000000000028" Maximum="10" IndicatorColor="#FFFF0000" FontSize="22" Width="195" Height="195" IndicatorMargin="27.3,27.3,27.3,27.3" RequiresTransparency="True" ForceTransparency="False" Name="m_CircularMeter3" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="396" Canvas.Top="126" Style="{nac1:StyleMarkupExtension Black}">
+      <nacc:CircularMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:CircularMeter.Resources>
+      <nacc:CircularMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OKSIJEN_TANK_BASINCI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:CircularMeter.Value>
+    </nacc:CircularMeter>
+    <nac:Label MultiLine="True" Text="OKSİJEN TANK&#xD;&#xA;BASINCI" Background="#00FFFFFF" Foreground="#FF5B92D6" FontFamily="Tahoma" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="411" Canvas.Top="67">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="OKSİJEN SAFLIGI" Background="#00FFFFFF" Foreground="#FF5B92D6" FontFamily="Tahoma" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="584" Canvas.Top="72">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Suffix=" bar (g)" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric2" Width="174" Height="39" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="14" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="410" Canvas.Top="328">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OKSIJEN_TANK_BASINCI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Prefix="% " VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric3" Width="173" Height="39" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="15" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="606" Canvas.Top="328">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_OKSIJEN_ORANI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" MaxNumberOfCharacters="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Hidden" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="20" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric4" Width="233" Height="34" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" KeyboardNavigation.TabNavigation="None" Canvas.Left="546" Canvas.Top="13">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagDateTime].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF000000" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nacs1:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox1" Width="91" Height="56" RenderTransform="Identity" Panel.ZIndex="18" Canvas.Left="231" Canvas.Top="405">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.MANUEL].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="229.9" Height="229.9">
+        <Canvas Width="229.9" Height="229.9">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M38,229.9C17.047,229.9,0,212.854,0,191.9L0,38C0,17.047,17.047,0,38,0L191.9,0C212.854,0,229.9,17.047,229.9,38L229.9,191.9C229.9,212.854,212.854,229.9,191.9,229.9L38,229.9z" Fill="#FF656565" />
+              <Path Data="F1M38,226.101C19.142,226.101,3.8,210.758,3.8,191.9L3.8,38C3.8,19.142,19.142,3.8,38,3.8L191.9,3.8C210.758,3.8,226.101,19.142,226.101,38L226.101,191.9C226.101,210.758,210.758,226.101,191.9,226.101L38,226.101z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-239.15" EndPoint="128,-16.851" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                        <GradientStop Color="#FF9D9FA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,18.2C27.083,18.2,18.2,27.083,18.2,38L18.2,191.9C18.2,202.818,27.083,211.7,38,211.7L191.9,211.7C202.818,211.7,211.7,202.818,211.7,191.9L211.7,38C211.7,27.083,202.818,18.2,191.9,18.2L38,18.2z M191.9,220.7L38,220.7C22.12,220.7,9.2,207.78,9.2,191.9L9.2,38C9.2,22.12,22.12,9.2,38,9.2L191.9,9.2C207.78,9.2,220.7,22.12,220.7,38L220.7,191.9C220.7,207.78,207.78,220.7,191.9,220.7z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-233.75" EndPoint="128,-22.25" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF9D9FA1" Offset="0" />
+                          <GradientStop Color="#FFFFFFFF" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M205.2,191.9C205.2,199.246,199.246,205.2,191.9,205.2L38,205.2C30.655,205.2,24.7,199.246,24.7,191.9L24.7,38C24.7,30.655,30.655,24.7,38,24.7L191.9,24.7C199.246,24.7,205.2,30.655,205.2,38L205.2,191.9z" Fill="#FF323232" />
+              <Path Data="F1M38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2L38,202.2z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,-128" RadiusX="87.25" RadiusY="87.25" GradientOrigin="128,-128" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF50D20" Offset="0" />
+                        <GradientStop Color="#FFDA232A" Offset="0.41" />
+                        <GradientStop Color="#FFAA1E20" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,191.9C35.7,193.169,36.732,194.2,38,194.2L191.9,194.2C193.169,194.2,194.2,193.169,194.2,191.9L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7L38,35.7z M191.9,202.2L38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-215.25" EndPoint="128,-40.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FFFFABAE" Offset="0" />
+                          <GradientStop Color="#FFAA1E20" Offset="0.33" />
+                          <GradientStop Color="#FFAA1E20" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M191.9,35.7L38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,127.374C42.318,127.749 49.017,127.95 55.793,127.95 108.417,127.95 156.656,116.397 194.2,97.192L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-141" EndPoint="128,-48.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFE74C52" Offset="0" />
+                        <GradientStop Color="#FFFFABAE" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox2" Width="91" Height="56" RenderTransform="Identity" Panel.ZIndex="19" Canvas.Left="231" Canvas.Top="405">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.MANUEL].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="229.9" Height="229.9">
+        <Canvas Width="229.9" Height="229.9">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M38,229.9C17.047,229.9,0,212.854,0,191.9L0,38C0,17.047,17.047,0,38,0L191.9,0C212.854,0,229.9,17.047,229.9,38L229.9,191.9C229.9,212.854,212.854,229.9,191.9,229.9L38,229.9z" Fill="#FF656565" />
+              <Path Data="F1M38,226.101C19.142,226.101,3.8,210.758,3.8,191.9L3.8,38C3.8,19.142,19.142,3.8,38,3.8L191.9,3.8C210.758,3.8,226.101,19.142,226.101,38L226.101,191.9C226.101,210.758,210.758,226.101,191.9,226.101L38,226.101z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-239.15" EndPoint="128,-16.851" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                        <GradientStop Color="#FF9D9FA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,18.2C27.083,18.2,18.2,27.083,18.2,38L18.2,191.9C18.2,202.818,27.083,211.7,38,211.7L191.9,211.7C202.818,211.7,211.7,202.818,211.7,191.9L211.7,38C211.7,27.083,202.818,18.2,191.9,18.2L38,18.2z M191.9,220.7L38,220.7C22.12,220.7,9.2,207.78,9.2,191.9L9.2,38C9.2,22.12,22.12,9.2,38,9.2L191.9,9.2C207.78,9.2,220.7,22.12,220.7,38L220.7,191.9C220.7,207.78,207.78,220.7,191.9,220.7z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-233.75" EndPoint="128,-22.25" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF9D9FA1" Offset="0" />
+                          <GradientStop Color="#FFFFFFFF" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M205.2,191.9C205.2,199.246,199.246,205.2,191.9,205.2L38,205.2C30.655,205.2,24.7,199.246,24.7,191.9L24.7,38C24.7,30.655,30.655,24.7,38,24.7L191.9,24.7C199.246,24.7,205.2,30.655,205.2,38L205.2,191.9z" Fill="#FF323232" />
+              <Path Data="F1M38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2L38,202.2z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,-128" RadiusX="87.25" RadiusY="87.25" GradientOrigin="128,-128" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,191.9C35.7,193.169,36.732,194.2,38,194.2L191.9,194.2C193.169,194.2,194.2,193.169,194.2,191.9L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7L38,35.7z M191.9,202.2L38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-215.25" EndPoint="128,-40.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FFCEFFAB" Offset="0" />
+                          <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                          <GradientStop Color="#FF55AA1E" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M191.9,35.7L38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,127.374C42.318,127.749 49.017,127.95 55.793,127.95 108.417,127.95 156.656,116.397 194.2,97.192L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-141" EndPoint="128,-48.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox" Width="91" Height="56" RenderTransform="Identity" Panel.ZIndex="21" Canvas.Left="475" Canvas.Top="405">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OTOMATIK].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="229.9" Height="229.9">
+        <Canvas Width="229.9" Height="229.9">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M38,229.9C17.047,229.9,0,212.854,0,191.9L0,38C0,17.047,17.047,0,38,0L191.9,0C212.854,0,229.9,17.047,229.9,38L229.9,191.9C229.9,212.854,212.854,229.9,191.9,229.9L38,229.9z" Fill="#FF656565" />
+              <Path Data="F1M38,226.101C19.142,226.101,3.8,210.758,3.8,191.9L3.8,38C3.8,19.142,19.142,3.8,38,3.8L191.9,3.8C210.758,3.8,226.101,19.142,226.101,38L226.101,191.9C226.101,210.758,210.758,226.101,191.9,226.101L38,226.101z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-239.15" EndPoint="128,-16.851" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                        <GradientStop Color="#FF9D9FA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,18.2C27.083,18.2,18.2,27.083,18.2,38L18.2,191.9C18.2,202.818,27.083,211.7,38,211.7L191.9,211.7C202.818,211.7,211.7,202.818,211.7,191.9L211.7,38C211.7,27.083,202.818,18.2,191.9,18.2L38,18.2z M191.9,220.7L38,220.7C22.12,220.7,9.2,207.78,9.2,191.9L9.2,38C9.2,22.12,22.12,9.2,38,9.2L191.9,9.2C207.78,9.2,220.7,22.12,220.7,38L220.7,191.9C220.7,207.78,207.78,220.7,191.9,220.7z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-233.75" EndPoint="128,-22.25" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF9D9FA1" Offset="0" />
+                          <GradientStop Color="#FFFFFFFF" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M205.2,191.9C205.2,199.246,199.246,205.2,191.9,205.2L38,205.2C30.655,205.2,24.7,199.246,24.7,191.9L24.7,38C24.7,30.655,30.655,24.7,38,24.7L191.9,24.7C199.246,24.7,205.2,30.655,205.2,38L205.2,191.9z" Fill="#FF323232" />
+              <Path Data="F1M38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2L38,202.2z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,-128" RadiusX="87.25" RadiusY="87.25" GradientOrigin="128,-128" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,191.9C35.7,193.169,36.732,194.2,38,194.2L191.9,194.2C193.169,194.2,194.2,193.169,194.2,191.9L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7L38,35.7z M191.9,202.2L38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-215.25" EndPoint="128,-40.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FFCEFFAB" Offset="0" />
+                          <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                          <GradientStop Color="#FF55AA1E" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M191.9,35.7L38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,127.374C42.318,127.749 49.017,127.95 55.793,127.95 108.417,127.95 156.656,116.397 194.2,97.192L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-141" EndPoint="128,-48.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox3" Width="91" Height="56" RenderTransform="Identity" Panel.ZIndex="20" Canvas.Left="475" Canvas.Top="405">
+      <nacs1:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OTOMATIK].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="229.9" Height="229.9">
+        <Canvas Width="229.9" Height="229.9">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M38,229.9C17.047,229.9,0,212.854,0,191.9L0,38C0,17.047,17.047,0,38,0L191.9,0C212.854,0,229.9,17.047,229.9,38L229.9,191.9C229.9,212.854,212.854,229.9,191.9,229.9L38,229.9z" Fill="#FF656565" />
+              <Path Data="F1M38,226.101C19.142,226.101,3.8,210.758,3.8,191.9L3.8,38C3.8,19.142,19.142,3.8,38,3.8L191.9,3.8C210.758,3.8,226.101,19.142,226.101,38L226.101,191.9C226.101,210.758,210.758,226.101,191.9,226.101L38,226.101z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-239.15" EndPoint="128,-16.851" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                        <GradientStop Color="#FF9D9FA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,18.2C27.083,18.2,18.2,27.083,18.2,38L18.2,191.9C18.2,202.818,27.083,211.7,38,211.7L191.9,211.7C202.818,211.7,211.7,202.818,211.7,191.9L211.7,38C211.7,27.083,202.818,18.2,191.9,18.2L38,18.2z M191.9,220.7L38,220.7C22.12,220.7,9.2,207.78,9.2,191.9L9.2,38C9.2,22.12,22.12,9.2,38,9.2L191.9,9.2C207.78,9.2,220.7,22.12,220.7,38L220.7,191.9C220.7,207.78,207.78,220.7,191.9,220.7z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-233.75" EndPoint="128,-22.25" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF9D9FA1" Offset="0" />
+                          <GradientStop Color="#FFFFFFFF" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M205.2,191.9C205.2,199.246,199.246,205.2,191.9,205.2L38,205.2C30.655,205.2,24.7,199.246,24.7,191.9L24.7,38C24.7,30.655,30.655,24.7,38,24.7L191.9,24.7C199.246,24.7,205.2,30.655,205.2,38L205.2,191.9z" Fill="#FF323232" />
+              <Path Data="F1M38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2L38,202.2z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,-128" RadiusX="87.25" RadiusY="87.25" GradientOrigin="128,-128" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF50D20" Offset="0" />
+                        <GradientStop Color="#FFDA232A" Offset="0.41" />
+                        <GradientStop Color="#FFAA1E20" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,191.9C35.7,193.169,36.732,194.2,38,194.2L191.9,194.2C193.169,194.2,194.2,193.169,194.2,191.9L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7L38,35.7z M191.9,202.2L38,202.2C32.321,202.2,27.7,197.58,27.7,191.9L27.7,38C27.7,32.321,32.321,27.7,38,27.7L191.9,27.7C197.58,27.7,202.2,32.321,202.2,38L202.2,191.9C202.2,197.58,197.58,202.2,191.9,202.2z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="128,-215.25" EndPoint="128,-40.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FFFFABAE" Offset="0" />
+                          <GradientStop Color="#FFAA1E20" Offset="0.33" />
+                          <GradientStop Color="#FFAA1E20" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+              <Path Data="F1M191.9,35.7L38,35.7C36.732,35.7,35.7,36.732,35.7,38L35.7,127.374C42.318,127.749 49.017,127.95 55.793,127.95 108.417,127.95 156.656,116.397 194.2,97.192L194.2,38C194.2,36.732,193.169,35.7,191.9,35.7z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,-141" EndPoint="128,-48.75" MappingMode="Absolute" Transform="1,0,0,-1,-13.05,-13.05">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFE74C52" Offset="0" />
+                        <GradientStop Color="#FFFFABAE" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs1:SymbolViewbox>
+    <nacc:CircularMeter MeterAppearance="Full" LowRegionColor="#FF1E477A" LowRegionMaximum="8" HighRegionMinimum="8" HighRegionMaximum="10" ShortestPathAnimation="False" IndicatorLength="57.181150000000017" IndicatorWidth="6.8250000000000028" Maximum="10" IndicatorColor="#FF4BACC6" FontSize="22" Width="195" Height="195" IndicatorMargin="27.3,27.3,27.3,27.3" RequiresTransparency="True" ForceTransparency="False" Name="m_CircularMeter" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="9" Canvas.Top="126" Style="{nac1:StyleMarkupExtension Black}">
+      <nacc:CircularMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:CircularMeter.Resources>
+      <nacc:CircularMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SOL_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:CircularMeter.Value>
+    </nacc:CircularMeter>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Suffix=" bar (g)" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="172" Height="39" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="13" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="213" Canvas.Top="328">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SAG_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Suffix=" bar (g)" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="24" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric" Width="172" Height="39" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="12" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="16" Canvas.Top="328">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SOL_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Label MultiLine="True" Text="PSA KOLON 2" Background="#00FFFFFF" Foreground="#FF5B92D6" FontFamily="Tahoma" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="228" Canvas.Top="72">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" Text="PSA KOLON 1" Background="#00FFFFFF" Foreground="#FF5B92D6" FontFamily="Tahoma" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="38" Canvas.Top="72">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacc:CircularMeter MeterAppearance="Full" LowRegionColor="#FF1E477A" LowRegionMaximum="8" HighRegionMinimum="8" HighRegionMaximum="10" ShortestPathAnimation="False" IndicatorLength="57.181150000000017" IndicatorWidth="6.8250000000000028" Maximum="10" IndicatorColor="#FF4BACC6" FontSize="22" Width="195" Height="195" IndicatorMargin="27.3,27.3,27.3,27.3" RequiresTransparency="False" ForceTransparency="False" Name="m_CircularMeter1" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="204" Canvas.Top="126" Style="{nac1:StyleMarkupExtension Black}">
+      <nacc:CircularMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:CircularMeter.Resources>
+      <nacc:CircularMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SAG_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:CircularMeter.Value>
+    </nacc:CircularMeter>
+    <nac:Button ButtonAppearance="RoundedBottom" Text="KONTROL AC / KAPAT" RequiresTransparency="True" SymbolTransparent="False" Foreground="#FF4BACC6" FontSize="22" FontWeight="Bold" Name="m_Button2" Width="269" Height="56" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="11" Canvas.Left="269" Canvas.Top="2" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Show Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Show" ObjectName="MENU" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.20.2296.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <naı:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                  </naı:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+    </nac:Button>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

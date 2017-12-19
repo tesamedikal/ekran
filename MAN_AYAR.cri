@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.30.24.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="MAN_AYAR.CircularMeter1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Text1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.CircularMeter" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Text" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Text2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button6" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button4" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button5" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MAN_AYAR.Button7" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="MAN_AYAR.CircularMeter1" TargetProperty="Value" Source="Tags.PSI_SAG_BASINC" />
+        <Item Target="MAN_AYAR.CircularMeter" TargetProperty="Value" Source="Tags.PSI_SOL_BASINC" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button6" TargetProperty="Actions" Source="Tags.CALISMA_SAATI_SIFIRLA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button6" TargetProperty="Actions" Source="Tags.CALISMA_SAATI_SIFIRLA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button1" TargetProperty="Actions" Source="Tags.MAN_K1_BASMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button1" TargetProperty="Actions" Source="Tags.MAN_K1_BASMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button2" TargetProperty="Actions" Source="Tags.MAN_K1_DOLDURMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button2" TargetProperty="Actions" Source="Tags.MAN_K1_DOLDURMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button" TargetProperty="Actions" Source="Tags.MAN_DENGELEME" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button" TargetProperty="Actions" Source="Tags.MAN_DENGELEME" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button3" TargetProperty="Actions" Source="Tags.MAN_K2_DOLDURMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button3" TargetProperty="Actions" Source="Tags.MAN_K2_DOLDURMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button4" TargetProperty="Actions" Source="Tags.MAN_K2_BASMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button4" TargetProperty="Actions" Source="Tags.MAN_K2_BASMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button5" TargetProperty="Actions" Source="Tags.MAN_LIKIT_BOSALTMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button5" TargetProperty="Actions" Source="Tags.MAN_LIKIT_BOSALTMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button7" TargetProperty="Actions" Source="Tags.RESET" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button7" TargetProperty="Actions" Source="Tags.RESET" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item Target="MAN_AYAR.Button7" TargetProperty="Background" Source="Tags.RESET" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="MAN_AYAR.CircularMeter1" Source="MAN_AYAR.m_CircularMeter1.bmp" />
+        <Item Target="MAN_AYAR.CircularMeter" Source="MAN_AYAR.m_CircularMeter.bmp" />
+        <Item Target="MAN_AYAR.Button1" Source="1182026642_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button1" Source="1182026642_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button1" Source="1182026642_Disabled.bmp" />
+        <Item Target="MAN_AYAR.Button2" Source="1429109865_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button2" Source="1429109865_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button2" Source="1429109865_Disabled.bmp" />
+        <Item Target="MAN_AYAR.Button" Source="1429109865_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button" Source="1429109865_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button" Source="1429109865_Disabled.bmp" />
+        <Item Target="MAN_AYAR.Button3" Source="1429109865_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button3" Source="1429109865_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button3" Source="1429109865_Disabled.bmp" />
+        <Item Target="MAN_AYAR.Button4" Source="32372336_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button4" Source="32372336_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button4" Source="32372336_Disabled.bmp" />
+        <Item Target="MAN_AYAR.Button5" Source="-1955485987_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button5" Source="-1955485987_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button5" Source="-1955485987_Disabled.bmp" />
+        <Item Target="MAN_AYAR.Button7" Source="910632307_Normal.bmp" />
+        <Item Target="MAN_AYAR.Button7" Source="910632307_Pressed.bmp" />
+        <Item Target="MAN_AYAR.Button7" Source="910632307_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Picture" TargetProperty="Actions" Source="IZLEME" Event="MouseUp" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>MAN_AYAR</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>14</ObjectsCount>
+          <ScreenName>MAN_AYAR</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button6" TargetProperty="Actions" Source="Tags.CALISMA_SAATI_SIFIRLA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button6" TargetProperty="Actions" Source="Tags.CALISMA_SAATI_SIFIRLA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button1" TargetProperty="Actions" Source="Tags.MAN_K1_BASMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button1" TargetProperty="Actions" Source="Tags.MAN_K1_BASMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button2" TargetProperty="Actions" Source="Tags.MAN_K1_DOLDURMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button2" TargetProperty="Actions" Source="Tags.MAN_K1_DOLDURMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button" TargetProperty="Actions" Source="Tags.MAN_DENGELEME" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button" TargetProperty="Actions" Source="Tags.MAN_DENGELEME" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button3" TargetProperty="Actions" Source="Tags.MAN_K2_DOLDURMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button3" TargetProperty="Actions" Source="Tags.MAN_K2_DOLDURMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button4" TargetProperty="Actions" Source="Tags.MAN_K2_BASMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button4" TargetProperty="Actions" Source="Tags.MAN_K2_BASMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button5" TargetProperty="Actions" Source="Tags.MAN_LIKIT_BOSALTMA" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button5" TargetProperty="Actions" Source="Tags.MAN_LIKIT_BOSALTMA" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button7" TargetProperty="Actions" Source="Tags.RESET" Event="PreviewMouseDown" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="MAN_AYAR.Button7" TargetProperty="Actions" Source="Tags.RESET" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="MAN_AYAR.Picture" Source="1074100_612878878863480_419287768912462570_o" Width="206" Height="80" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

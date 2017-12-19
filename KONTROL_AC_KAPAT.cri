@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.30.24.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="KONTROL_AC_KAPAT.Button1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.Button" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.Text" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.Text3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric4" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.Text2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.Text1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="KONTROL_AC_KAPAT.Button2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button1" TargetProperty="Actions" Source="Tags.MANUEL" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button1" TargetProperty="Actions" Source="Tags.OTOMATIK" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item Target="KONTROL_AC_KAPAT.Button1" TargetProperty="Background" Source="Tags.MANUEL" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button" TargetProperty="Actions" Source="Tags.MANUEL" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button" TargetProperty="Actions" Source="Tags.OTOMATIK" Event="Click" Action="Toggle Tag" Param="" />
+        <Item Target="KONTROL_AC_KAPAT.Button" TargetProperty="Background" Source="Tags.OTOMATIK" />
+        <Item Target="KONTROL_AC_KAPAT.Picture1" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.LOGO_SEMBOL" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter2" TargetProperty="Value" Source="Tags.PSI_OKSIJEN_ORANI" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter3" TargetProperty="Value" Source="Tags.OKSIJEN_TANK_BASINCI" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric2" TargetProperty="Value" Source="Tags.OKSIJEN_TANK_BASINCI" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric3" TargetProperty="Value" Source="Tags.PSI_OKSIJEN_ORANI" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric4" TargetProperty="Value" Source="Tags.SystemTagDateTime" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.MANUEL" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox2" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.MANUEL" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.OTOMATIK" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.OTOMATIK" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter" TargetProperty="Value" Source="Tags.PSI_SOL_BASINC" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric1" TargetProperty="Value" Source="Tags.PSI_SAG_BASINC" />
+        <Item Target="KONTROL_AC_KAPAT.AnalogNumeric" TargetProperty="Value" Source="Tags.PSI_SOL_BASINC" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter1" TargetProperty="Value" Source="Tags.PSI_SAG_BASINC" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter2" Source="KONTROL_AC_KAPAT.m_CircularMeter2.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter3" Source="KONTROL_AC_KAPAT.m_CircularMeter3.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox1" Source="KONTROL_AC_KAPAT.m_SymbolViewbox1.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox2" Source="KONTROL_AC_KAPAT.m_SymbolViewbox2.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox" Source="KONTROL_AC_KAPAT.m_SymbolViewbox.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.SymbolViewbox3" Source="KONTROL_AC_KAPAT.m_SymbolViewbox3.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter" Source="KONTROL_AC_KAPAT.m_CircularMeter.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.CircularMeter1" Source="KONTROL_AC_KAPAT.m_CircularMeter1.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.Button2" Source="-1758904512_Normal.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.Button2" Source="-1758904512_Pressed.bmp" />
+        <Item Target="KONTROL_AC_KAPAT.Button2" Source="-1758904512_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Picture1" TargetProperty="Actions" Source="SIFRE2" Event="MouseDown" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button2" TargetProperty="Actions" Source="MENU" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>KONTROL_AC_KAPAT</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>21</ObjectsCount>
+          <ScreenName>KONTROL_AC_KAPAT</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button1" TargetProperty="Actions" Source="Tags.MANUEL" Event="Click" Action="Toggle Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button1" TargetProperty="Actions" Source="Tags.OTOMATIK" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button" TargetProperty="Actions" Source="Tags.MANUEL" Event="PreviewMouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="KONTROL_AC_KAPAT.Button" TargetProperty="Actions" Source="Tags.OTOMATIK" Event="Click" Action="Toggle Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="KONTROL_AC_KAPAT.Picture1" Source="12312313121" Width="181" Height="59" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

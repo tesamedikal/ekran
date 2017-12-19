@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.30.24.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="IZLEME.Text" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="IZLEME.Text1" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="IZLEME.Text2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.Text3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.Text4" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.LinearMeter" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.LinearMeter1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.LinearMeter2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.AnalogNumeric" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.AnalogNumeric1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.AnalogNumeric2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.AnalogNumeric3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.Text5" TargetProperty="FontFamily" Source="ARIBLK.TTF" />
+        <Item Target="IZLEME.Text6" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.AnalogNumeric4" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.Text7" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.AnalogNumeric5" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="IZLEME.Text8" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="IZLEME.Picture3" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA1_LOGO" />
+        <Item Target="IZLEME.Picture4" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA1_LOGO" />
+        <Item Target="IZLEME.LinearMeter" TargetProperty="Value" Source="Tags.OKSIJEN_TANK_BASINCI" />
+        <Item Target="IZLEME.LinearMeter1" TargetProperty="Value" Source="Tags.PSI_SOL_BASINC" />
+        <Item Target="IZLEME.LinearMeter2" TargetProperty="Value" Source="Tags.PSI_SAG_BASINC" />
+        <Item Target="IZLEME.Picture5" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA1_LOGO" />
+        <Item Target="IZLEME.Picture6" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA1_LOGO" />
+        <Item Target="IZLEME.Picture7" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.TANK_DOLUM_2_LOGO" />
+        <Item Target="IZLEME.Picture9" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA2_LOGO" />
+        <Item Target="IZLEME.Picture10" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA2_LOGO" />
+        <Item Target="IZLEME.Picture11" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA2_LOGO" />
+        <Item Target="IZLEME.Picture12" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.BASMA_BOSALTMA2_LOGO" />
+        <Item Target="IZLEME.Picture13" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.TANK_DOLUM_2_LOGO" />
+        <Item Target="IZLEME.Picture8" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.TANK_DOLUM_1_LOGO" />
+        <Item Target="IZLEME.Picture14" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.TANK_DOLUM_1_LOGO" />
+        <Item Target="IZLEME.Picture15" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.DENGELEME_LOGO" />
+        <Item Target="IZLEME.Picture16" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.DENGELEME_LOGO" />
+        <Item xsi:type="ActionItem" Target="IZLEME.Picture17" TargetProperty="Actions" Source="Tags.LIKIT_BUTON" Event="MouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="IZLEME.Picture17" TargetProperty="Actions" Source="Tags.LIKIT_BUTON" Event="MouseDown" Action="Set Tag" Param="" />
+        <Item Target="IZLEME.Picture18" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.LIKIT_SEMBOL" />
+        <Item Target="IZLEME.Picture19" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.LIKIT_SEMBOL" />
+        <Item Target="IZLEME.Picture20" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.LIKIT_SEMBOL" />
+        <Item Target="IZLEME.Picture21" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.LIKIT_SEMBOL" />
+        <Item Target="IZLEME.AnalogNumeric" TargetProperty="Value" Source="Tags.PSI_SOL_BASINC" />
+        <Item Target="IZLEME.AnalogNumeric1" TargetProperty="Value" Source="Tags.PSI_SAG_BASINC" />
+        <Item Target="IZLEME.AnalogNumeric2" TargetProperty="Value" Source="Tags.OKSIJEN_TANK_BASINCI" />
+        <Item Target="IZLEME.AnalogNumeric3" TargetProperty="Value" Source="Tags.PSI_OKSIJEN_ORANI" />
+        <Item Target="IZLEME.Picture22" TargetProperty="BlinkProperties.IsBlinkEnabled" Source="Tags.LOGO_SEMBOL" />
+        <Item Target="IZLEME.AnalogNumeric4" TargetProperty="Value" Source="Tags.SystemTagDateTime" />
+        <Item Target="IZLEME.AnalogNumeric5" TargetProperty="Value" Source="Tags.AKIS_DEGERI" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="IZLEME.SymbolViewbox1" Source="IZLEME.m_SymbolViewbox1.bmp" />
+        <Item Target="IZLEME.SymbolViewbox" Source="IZLEME.m_SymbolViewbox.bmp" />
+        <Item Target="IZLEME.LinearMeter" Source="IZLEME.m_LinearMeter.bmp" />
+        <Item Target="IZLEME.LinearMeter1" Source="IZLEME.m_LinearMeter1.bmp" />
+        <Item Target="IZLEME.LinearMeter2" Source="IZLEME.m_LinearMeter2.bmp" />
+        <Item Target="IZLEME.SymbolViewbox2" Source="IZLEME.m_SymbolViewbox2.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="IZLEME.Picture22" TargetProperty="Actions" Source="MAN_AYAR" Event="MouseUp" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="IZLEME.SymbolViewbox2" TargetProperty="Actions" Source="MENU" Event="MouseEnter" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>IZLEME</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>44</ObjectsCount>
+          <ScreenName>IZLEME</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="IZLEME.Picture17" TargetProperty="Actions" Source="Tags.LIKIT_BUTON" Event="MouseUp" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="IZLEME.Picture17" TargetProperty="Actions" Source="Tags.LIKIT_BUTON" Event="MouseDown" Action="Set Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture" Source="tesa ızleme - jpg (2)" Width="807" Height="377" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture1" Source="yeni bit eşlem resmi" Width="807" Height="86" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture2" Source="yeni bit eşlem resmi" Width="807" Height="46" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture3" Source="hand valve 2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture4" Source="hand valve 3" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture5" Source="hand valve 2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture6" Source="hand valve 3" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture7" Source="gri1 (2)" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture9" Source="hand valve 2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture10" Source="hand valve 3" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture11" Source="hand valve 3" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture12" Source="hand valve 2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture13" Source="gri2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture8" Source="gri1 (2)" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture14" Source="gri2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture15" Source="gri1 (2)" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture16" Source="gri2" Width="19" Height="17" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture17" Source="42859629-water-drop-icon-liquid-sign-freshness-condensation-or-washing--stock-photo" Width="78" Height="78" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture18" Source="gri1 (2)" Width="15" Height="11" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture19" Source="gri2" Width="15" Height="11" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture20" Source="gri1 (2)" Width="15" Height="11" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture21" Source="gri2" Width="15" Height="11" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="IZLEME.Picture22" Source="adsız (1)" Width="174" Height="121" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

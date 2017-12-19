@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.30.24.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="ANA_SAYFA.Text" TargetProperty="FontFamily" Source="BRUSHSCI.TTF" />
+        <Item Target="ANA_SAYFA.AnalogNumeric4" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.AnalogNumeric" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.AnalogNumeric1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.AnalogNumeric2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.Text1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.Text2" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.Button11" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.Button" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.Button1" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="ANA_SAYFA.Text3" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="ANA_SAYFA.AnalogNumeric4" TargetProperty="Value" Source="Tags.SystemTagDateTime" />
+        <Item Target="ANA_SAYFA.AnalogNumeric" TargetProperty="Value" Source="Tags.CALISMA_SAAT" />
+        <Item Target="ANA_SAYFA.AnalogNumeric1" TargetProperty="Value" Source="Tags.CALISMA_DAKIKA" />
+        <Item Target="ANA_SAYFA.AnalogNumeric2" TargetProperty="Value" Source="Tags.CALISMA_SANIYE" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="ANA_SAYFA.Button11" Source="-1818594472_Normal.bmp" />
+        <Item Target="ANA_SAYFA.Button11" Source="-1818594472_Pressed.bmp" />
+        <Item Target="ANA_SAYFA.Button11" Source="-1818594472_Disabled.bmp" />
+        <Item Target="ANA_SAYFA.Button" Source="1916604426_Normal.bmp" />
+        <Item Target="ANA_SAYFA.Button" Source="1916604426_Pressed.bmp" />
+        <Item Target="ANA_SAYFA.Button" Source="1916604426_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="ANA_SAYFA.Button11" TargetProperty="Actions" Source="DIL" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="ANA_SAYFA.Button" TargetProperty="Actions" Source="SIFRE" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="ANA_SAYFA.Button1" TargetProperty="Actions" Source="TANITIM" Event="PreviewMouseUp" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>ANA_SAYFA</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>12</ObjectsCount>
+          <ScreenName>ANA_SAYFA</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="ANA_SAYFA.Picture2" Source="tesa o2p" Width="805" Height="492" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ANA_SAYFA.Button11" Source="globe" Width="58" Height="58" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="ANA_SAYFA.Button" Source="home" Width="58" Height="58" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

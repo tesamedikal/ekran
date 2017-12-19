@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.22.212.0'?>
+<nacs:ScreenWindow Topmost="False" Title="IZLEME" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="SingleBorder" ScreenSize="800, 480" StyleName="Default" Width="800" Height="480" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacl="clr-namespace:Neo.ApplicationFramework.Controls.Logic;assembly=Controls" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:naı="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.IZLEME">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="480" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nacs1:Picture SymbolName="tesa ızleme - jpg (2)" Stretch="True" Name="m_Picture" Width="807" Height="377" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="-4" Canvas.Top="77" />
+    <nacs1:Picture SymbolName="yeni bit eşlem resmi" Stretch="True" Name="m_Picture1" Width="807" Height="86" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="-5" Canvas.Top="-1" />
+    <nacs1:Picture SymbolName="yeni bit eşlem resmi" Stretch="True" Name="m_Picture2" Width="807" Height="46" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="-4" Canvas.Top="453" />
+    <nac:Label Text="OKSİJEN JENERATÖRÜ" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Arial" FontSize="12" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="408" Canvas.Top="393" />
+    <nac:Label Text="OKSİJEN TANKI" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Arial" FontSize="12" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="628" Canvas.Top="393" />
+    <nac:Label Text="" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_Text2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="153" Canvas.Top="225">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label MultiLine="True" AutoStretchFont="True" Text="HAVA TANKI" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="193" Canvas.Top="394">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="KURUTUCU" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3,0,3,1" Name="m_Text4" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="306" Canvas.Top="394">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacs1:Picture SymbolName="hand valve 2" Stretch="True" Name="m_Picture3" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="486" Canvas.Top="308">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA1_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="hand valve 3" Stretch="True" Name="m_Picture4" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="486" Canvas.Top="308">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA1_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:SymbolViewbox SymbolColor="#FFFF0000" RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox1" Width="19" Height="29" RenderTransform="Identity" Panel.ZIndex="11" Canvas.Left="273" Canvas.Top="212">
+      <Canvas Width="98.56" Height="133.597">
+        <Path Data="F1M67.68,8.79999C72.48,8.79999,85.28,15.2001,90.08,15.2001L90.08,40.8C85.2801,40.8 72.48,48.8 67.68,48.8 67.68,35.4667 67.68,8.79999 67.68,8.79999z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="24" Height="41.6" Canvas.Left="66.88" Canvas.Top="7.99999">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="-0.00949795,-0.000218313" EndPoint="-0.00949795,0.999381">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.534247" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M30.88,48.8C26.08,48.8,13.2801,42.4,8.48001,42.4L8.48001,16.8C13.28,16.8 26.08,8.79999 30.88,8.79999 30.88,22.1334 30.88,48.8 30.88,48.8z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="24" Height="41.6" Canvas.Left="7.68001" Canvas.Top="7.99999">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.993049,-0.000218313" EndPoint="0.993049,0.998712">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.534247" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M98.08,15.2001L98.08,40.8C98.08,41.5364,96.6165,44,95.88,44L92.2801,44C91.5437,44,90.08,41.5364,90.08,40.8L90.08,15.2001C90.08,14.4637,91.5437,12.0001,92.2801,12.0001L95.88,12.0001C96.6165,12.0001,98.08,14.4637,98.08,15.2001z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="32.9599" Canvas.Left="89.6" Canvas.Top="11.5201">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.412623,0.0148298" EndPoint="0.412623,0.985707">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.495763" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M92.28,12L95.88,12C96.6164,12,98.08,14.4636,98.08,15.2001L98.08,18.4C98.08,19.1364,95.6164,21.6,94.88,21.6L93.28,21.6C92.5437,21.6,90.08,19.1364,90.08,18.4L90.08,15.2001C90.08,14.4636,91.5437,12,92.28,12z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="10.56" Canvas.Left="89.6" Canvas.Top="11.52" />
+        <Path Data="F1M93.28,34.4L94.88,34.4C95.6164,34.4,98.08,36.8636,98.08,37.6L98.08,40.8C98.08,41.5364,96.6164,44,95.88,44L92.28,44C91.5437,44,90.08,41.5364,90.08,40.8L90.08,37.6C90.08,36.8636,92.5437,34.4,93.28,34.4z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="10.56" Canvas.Left="89.6" Canvas.Top="33.92" />
+        <Path Data="F1M93.28,21.6L94.88,21.6C95.6164,21.6,98.08,24.8849,98.08,25.8667L98.08,30.1334C98.08,31.1152,95.6164,34.4,94.88,34.4L93.28,34.4C92.5437,34.4,90.08,31.1152,90.08,30.1334L90.08,25.8667C90.08,24.8849,92.5437,21.6,93.28,21.6z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="13.76" Canvas.Left="89.6" Canvas.Top="21.12" />
+        <Path Data="F1M0.480011,42.4L0.47998,16.8C0.47998,16.0637,1.9436,13.6,2.67996,13.6L6.28,13.6C7.01636,13.6,8.47998,16.0637,8.47998,16.8L8.47998,42.4C8.47998,43.1364,7.01636,45.6,6.28,45.6L2.67996,45.6C1.9436,45.6,0.47998,43.1364,0.480011,42.4z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="32.9599" Canvas.Left="-1.95503E-05" Canvas.Top="13.12">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.58738,0.98517" EndPoint="0.58738,0.0142946">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.495763" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M6.28,45.6L2.68002,45.6C1.9436,45.6,0.480011,43.1364,0.480011,42.4L0.480011,39.2001C0.480011,38.4636,2.9436,36,3.68002,36L5.28,36C6.01639,36,8.48001,38.4636,8.48001,39.2001L8.48001,42.4C8.48001,43.1364,7.01639,45.6,6.28,45.6z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="10.56" Canvas.Left="1.09673E-05" Canvas.Top="35.52" />
+        <Path Data="F1M5.28,23.2001L3.68002,23.2001C2.9436,23.2001,0.480011,20.7365,0.480011,20L0.480011,16.8C0.480011,16.0637,1.9436,13.6,2.68002,13.6L6.28,13.6C7.01639,13.6,8.48001,16.0637,8.48001,16.8L8.48001,20C8.48001,20.7365,6.01639,23.2001,5.28,23.2001z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="10.56" Canvas.Left="1.09673E-05" Canvas.Top="13.12" />
+        <Path Data="F1M5.28,36L3.68002,36C2.9436,36,0.480011,32.7152,0.480011,31.7333L0.480011,27.4667C0.480011,26.4849,2.9436,23.2001,3.68002,23.2001L5.28,23.2001C6.01639,23.2001,8.48001,26.4849,8.48001,27.4667L8.48001,31.7333C8.48001,32.7152,6.01639,36,5.28,36z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="13.7599" Canvas.Left="1.09673E-05" Canvas.Top="22.7201" />
+        <nacc:Ellipse Stretch="Fill" Fill="#FFCFCFCF" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="57.6" Height="57.6" Canvas.Left="20.48" Canvas.Top="-1.2219E-05" />
+        <Path Data="F1M57.28,116.796C58.5359,118.467 59.28,120.545 59.28,122.797 59.28,128.32 54.8029,132.797 49.28,132.797 43.7572,132.797 39.28,128.32 39.28,122.797 39.28,120.545 40.0242,118.467 41.28,116.796L41.28,42.6562C36.4976,39.8898 33.28,34.719 33.28,28.7968 33.28,19.9602 40.4435,12.7968 49.28,12.7968 58.1166,12.7968 65.28,19.9601 65.28,28.7968 65.28,34.719 62.0624,39.8898 57.28,42.6562L57.28,116.796z M49.28,20.7968C44.8617,20.7968 41.28,24.3784 41.28,28.7968 41.28,33.215 44.8617,36.7966 49.2799,36.7968L49.28,36.7968 49.2801,36.7968C53.6983,36.7966 57.28,33.215 57.28,28.7968 57.28,24.3784 53.6983,20.7968 49.28,20.7968z" Stretch="Fill" Width="32" Height="120" Canvas.Left="33.28" Canvas.Top="12.7968">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <nacc:Ellipse Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="21.6" Height="21.6" Canvas.Left="38.48" Canvas.Top="111.997">
+          <nacc:Ellipse.Fill>
+            <RadialGradientBrush Center="0.5,0.5" RadiusX="0.500002" RadiusY="0.500001" GradientOrigin="0.5,0.5">
+              <RadialGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#0D000000" Offset="0" />
+                  <GradientStop Color="#7F000000" Offset="1" />
+                </GradientStopCollection>
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <TransformGroup.Children>
+                    <TransformCollection>
+                      <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5" />
+                    </TransformCollection>
+                  </TransformGroup.Children>
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </nacc:Ellipse.Fill>
+        </nacc:Ellipse>
+        <Path Data="F1M41.2799,42.6572L41.2799,116.797C43.1044,114.417 46.0088,112.878 49.2799,112.878 52.5512,112.878 55.4555,114.417 57.2799,116.797L57.2799,42.6572C54.9266,44.0185 52.1942,44.7976 49.2799,44.7976 46.3656,44.7976 43.6334,44.0185 41.2799,42.6572z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="17.6" Height="75.7396" Canvas.Left="40.4799" Canvas.Top="41.8572">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.960535,0.398897" EndPoint="0.026192,0.398897">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#0D000000" Offset="0.495763" />
+                  <GradientStop Color="#7F000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M49.28,44.7968C58.1166,44.7968 65.28,37.6333 65.28,28.7968 65.28,19.9601 58.1166,12.7968 49.28,12.7968 40.4435,12.7968 33.28,19.9601 33.28,28.7968 33.28,37.6332 40.4435,44.7968 49.28,44.7968z M49.28,20.7968C53.6983,20.7968 57.28,24.3784 57.28,28.7968 57.28,33.215 53.6983,36.7968 49.28,36.7968 44.8617,36.7968 41.28,33.215 41.28,28.7968 41.28,24.3784 44.8617,20.7968 49.28,20.7968z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="33.6" Height="33.6" Canvas.Left="32.48" Canvas.Top="11.9968">
+          <Path.Fill>
+            <RadialGradientBrush Center="0.978331,0.0261383" RadiusX="1.28023" RadiusY="1.28023" GradientOrigin="0.978331,0.0261383">
+              <RadialGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#0D000000" Offset="0" />
+                  <GradientStop Color="#7F000000" Offset="1" />
+                </GradientStopCollection>
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <TransformGroup.Children>
+                    <TransformCollection>
+                      <RotateTransform Angle="135.157" CenterX="0.978331" CenterY="0.0261383" />
+                    </TransformCollection>
+                  </TransformGroup.Children>
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M57.7682,28.7968L49.28,37.2849 40.7919,28.7968 49.28,20.3085 57.7682,28.7968z" Stretch="Fill" Fill="#FFA4A4A4" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="18.5763" Height="18.5763" Canvas.Left="39.9919" Canvas.Top="19.5085" />
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacs1:SymbolViewbox SymbolColor="#FFFF0000" RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox" Width="19" Height="29" RenderTransform="Identity" Panel.ZIndex="12" Canvas.Left="619" Canvas.Top="267">
+      <Canvas Width="98.56" Height="133.597">
+        <Path Data="F1M67.68,8.79999C72.48,8.79999,85.28,15.2001,90.08,15.2001L90.08,40.8C85.2801,40.8 72.48,48.8 67.68,48.8 67.68,35.4667 67.68,8.79999 67.68,8.79999z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="24" Height="41.6" Canvas.Left="66.88" Canvas.Top="7.99999">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="-0.00949795,-0.000218313" EndPoint="-0.00949795,0.999381">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.534247" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M30.88,48.8C26.08,48.8,13.2801,42.4,8.48001,42.4L8.48001,16.8C13.28,16.8 26.08,8.79999 30.88,8.79999 30.88,22.1334 30.88,48.8 30.88,48.8z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="24" Height="41.6" Canvas.Left="7.68001" Canvas.Top="7.99999">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.993049,-0.000218313" EndPoint="0.993049,0.998712">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.534247" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M98.08,15.2001L98.08,40.8C98.08,41.5364,96.6165,44,95.88,44L92.2801,44C91.5437,44,90.08,41.5364,90.08,40.8L90.08,15.2001C90.08,14.4637,91.5437,12.0001,92.2801,12.0001L95.88,12.0001C96.6165,12.0001,98.08,14.4637,98.08,15.2001z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="32.9599" Canvas.Left="89.6" Canvas.Top="11.5201">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.412623,0.0148298" EndPoint="0.412623,0.985707">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.495763" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M92.28,12L95.88,12C96.6164,12,98.08,14.4636,98.08,15.2001L98.08,18.4C98.08,19.1364,95.6164,21.6,94.88,21.6L93.28,21.6C92.5437,21.6,90.08,19.1364,90.08,18.4L90.08,15.2001C90.08,14.4636,91.5437,12,92.28,12z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="10.56" Canvas.Left="89.6" Canvas.Top="11.52" />
+        <Path Data="F1M93.28,34.4L94.88,34.4C95.6164,34.4,98.08,36.8636,98.08,37.6L98.08,40.8C98.08,41.5364,96.6164,44,95.88,44L92.28,44C91.5437,44,90.08,41.5364,90.08,40.8L90.08,37.6C90.08,36.8636,92.5437,34.4,93.28,34.4z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="10.56" Canvas.Left="89.6" Canvas.Top="33.92" />
+        <Path Data="F1M93.28,21.6L94.88,21.6C95.6164,21.6,98.08,24.8849,98.08,25.8667L98.08,30.1334C98.08,31.1152,95.6164,34.4,94.88,34.4L93.28,34.4C92.5437,34.4,90.08,31.1152,90.08,30.1334L90.08,25.8667C90.08,24.8849,92.5437,21.6,93.28,21.6z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96001" Height="13.76" Canvas.Left="89.6" Canvas.Top="21.12" />
+        <Path Data="F1M0.480011,42.4L0.47998,16.8C0.47998,16.0637,1.9436,13.6,2.67996,13.6L6.28,13.6C7.01636,13.6,8.47998,16.0637,8.47998,16.8L8.47998,42.4C8.47998,43.1364,7.01636,45.6,6.28,45.6L2.67996,45.6C1.9436,45.6,0.47998,43.1364,0.480011,42.4z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="32.9599" Canvas.Left="-1.95503E-05" Canvas.Top="13.12">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.58738,0.98517" EndPoint="0.58738,0.0142946">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF343434" Offset="0" />
+                  <GradientStop Color="#FFE1E1E1" Offset="0.495763" />
+                  <GradientStop Color="#FF343434" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M6.28,45.6L2.68002,45.6C1.9436,45.6,0.480011,43.1364,0.480011,42.4L0.480011,39.2001C0.480011,38.4636,2.9436,36,3.68002,36L5.28,36C6.01639,36,8.48001,38.4636,8.48001,39.2001L8.48001,42.4C8.48001,43.1364,7.01639,45.6,6.28,45.6z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="10.56" Canvas.Left="1.09673E-05" Canvas.Top="35.52" />
+        <Path Data="F1M5.28,23.2001L3.68002,23.2001C2.9436,23.2001,0.480011,20.7365,0.480011,20L0.480011,16.8C0.480011,16.0637,1.9436,13.6,2.68002,13.6L6.28,13.6C7.01639,13.6,8.48001,16.0637,8.48001,16.8L8.48001,20C8.48001,20.7365,6.01639,23.2001,5.28,23.2001z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="10.56" Canvas.Left="1.09673E-05" Canvas.Top="13.12" />
+        <Path Data="F1M5.28,36L3.68002,36C2.9436,36,0.480011,32.7152,0.480011,31.7333L0.480011,27.4667C0.480011,26.4849,2.9436,23.2001,3.68002,23.2001L5.28,23.2001C6.01639,23.2001,8.48001,26.4849,8.48001,27.4667L8.48001,31.7333C8.48001,32.7152,6.01639,36,5.28,36z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="0.96" StrokeLineJoin="Round" Width="8.96" Height="13.7599" Canvas.Left="1.09673E-05" Canvas.Top="22.7201" />
+        <nacc:Ellipse Stretch="Fill" Fill="#FFCFCFCF" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="57.6" Height="57.6" Canvas.Left="20.48" Canvas.Top="-1.2219E-05" />
+        <Path Data="F1M57.28,116.796C58.5359,118.467 59.28,120.545 59.28,122.797 59.28,128.32 54.8029,132.797 49.28,132.797 43.7572,132.797 39.28,128.32 39.28,122.797 39.28,120.545 40.0242,118.467 41.28,116.796L41.28,42.6562C36.4976,39.8898 33.28,34.719 33.28,28.7968 33.28,19.9602 40.4435,12.7968 49.28,12.7968 58.1166,12.7968 65.28,19.9601 65.28,28.7968 65.28,34.719 62.0624,39.8898 57.28,42.6562L57.28,116.796z M49.28,20.7968C44.8617,20.7968 41.28,24.3784 41.28,28.7968 41.28,33.215 44.8617,36.7966 49.2799,36.7968L49.28,36.7968 49.2801,36.7968C53.6983,36.7966 57.28,33.215 57.28,28.7968 57.28,24.3784 53.6983,20.7968 49.28,20.7968z" Stretch="Fill" Width="32" Height="120" Canvas.Left="33.28" Canvas.Top="12.7968">
+          <Path.Fill>
+            <Binding RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type nacs1:SymbolViewbox}}" Path="SymbolColor" />
+          </Path.Fill>
+        </Path>
+        <nacc:Ellipse Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="21.6" Height="21.6" Canvas.Left="38.48" Canvas.Top="111.997">
+          <nacc:Ellipse.Fill>
+            <RadialGradientBrush Center="0.5,0.5" RadiusX="0.500002" RadiusY="0.500001" GradientOrigin="0.5,0.5">
+              <RadialGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#0D000000" Offset="0" />
+                  <GradientStop Color="#7F000000" Offset="1" />
+                </GradientStopCollection>
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <TransformGroup.Children>
+                    <TransformCollection>
+                      <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5" />
+                    </TransformCollection>
+                  </TransformGroup.Children>
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </nacc:Ellipse.Fill>
+        </nacc:Ellipse>
+        <Path Data="F1M41.2799,42.6572L41.2799,116.797C43.1044,114.417 46.0088,112.878 49.2799,112.878 52.5512,112.878 55.4555,114.417 57.2799,116.797L57.2799,42.6572C54.9266,44.0185 52.1942,44.7976 49.2799,44.7976 46.3656,44.7976 43.6334,44.0185 41.2799,42.6572z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="17.6" Height="75.7396" Canvas.Left="40.4799" Canvas.Top="41.8572">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.960535,0.398897" EndPoint="0.026192,0.398897">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#7F000000" Offset="0" />
+                  <GradientStop Color="#0D000000" Offset="0.495763" />
+                  <GradientStop Color="#7F000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M49.28,44.7968C58.1166,44.7968 65.28,37.6333 65.28,28.7968 65.28,19.9601 58.1166,12.7968 49.28,12.7968 40.4435,12.7968 33.28,19.9601 33.28,28.7968 33.28,37.6332 40.4435,44.7968 49.28,44.7968z M49.28,20.7968C53.6983,20.7968 57.28,24.3784 57.28,28.7968 57.28,33.215 53.6983,36.7968 49.28,36.7968 44.8617,36.7968 41.28,33.215 41.28,28.7968 41.28,24.3784 44.8617,20.7968 49.28,20.7968z" Stretch="Fill" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="33.6" Height="33.6" Canvas.Left="32.48" Canvas.Top="11.9968">
+          <Path.Fill>
+            <RadialGradientBrush Center="0.978331,0.0261383" RadiusX="1.28023" RadiusY="1.28023" GradientOrigin="0.978331,0.0261383">
+              <RadialGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#0D000000" Offset="0" />
+                  <GradientStop Color="#7F000000" Offset="1" />
+                </GradientStopCollection>
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup>
+                  <TransformGroup.Children>
+                    <TransformCollection>
+                      <RotateTransform Angle="135.157" CenterX="0.978331" CenterY="0.0261383" />
+                    </TransformCollection>
+                  </TransformGroup.Children>
+                </TransformGroup>
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </Path.Fill>
+        </Path>
+        <Path Data="F1M57.7682,28.7968L49.28,37.2849 40.7919,28.7968 49.28,20.3085 57.7682,28.7968z" Stretch="Fill" Fill="#FFA4A4A4" Stroke="#FF000000" StrokeThickness="1.6" StrokeLineJoin="Round" Width="18.5763" Height="18.5763" Canvas.Left="39.9919" Canvas.Top="19.5085" />
+      </Canvas>
+    </nacs1:SymbolViewbox>
+    <nacc:LinearMeter Orientation="Vertical" Maximum="10" MajorTickCount="1" MinorTickCount="1" IndicatorColor="#FF4BACC6" Background="#FFFFFFFF" BorderBrush="#FFA93E3B" Foreground="#FFFFFFFF" FontSize="12" Width="82" Height="125" ScaleVisible="Hidden" Transparent="Hidden" ScaleColor="#FF4BACC6" IndicatorMargin="8,8,8,8" RequiresTransparency="True" ForceTransparency="False" FontFamily="Tahoma" FontStyle="Normal" Name="m_LinearMeter" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="13" nacl:DelayInputEvents.DelayMouseInput="False" nac:EnabledProperties.EnabledDynamicsValue="True" Canvas.Left="634" Canvas.Top="225" Style="{nac1:StyleMarkupExtension Vintage_Compact}">
+      <nacc:LinearMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:LinearMeter.Resources>
+      <nacc:LinearMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OKSIJEN_TANK_BASINCI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:LinearMeter.Value>
+    </nacc:LinearMeter>
+    <nacc:LinearMeter Orientation="Vertical" Maximum="10" MajorTickCount="1" MinorTickCount="1" IndicatorColor="#FF4BACC6" Background="#FFFFFFFF" BorderBrush="#FFA93E3B" Foreground="#FFA6C170" FontSize="12" Width="27" Height="110" ScaleVisible="Hidden" Transparent="Hidden" ScaleColor="#FF4BACC6" IndicatorMargin="8,8,8,8" RequiresTransparency="True" ForceTransparency="False" FontFamily="Tahoma" FontStyle="Normal" Name="m_LinearMeter1" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="15" nacl:DelayInputEvents.DelayMouseInput="False" nac:EnabledProperties.EnabledDynamicsValue="True" Canvas.Left="401" Canvas.Top="225" Style="{nac1:StyleMarkupExtension Vintage_Compact}">
+      <nacc:LinearMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:LinearMeter.Resources>
+      <nacc:LinearMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SOL_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:LinearMeter.Value>
+    </nacc:LinearMeter>
+    <nacc:LinearMeter Orientation="Vertical" Maximum="10" MajorTickCount="1" MinorTickCount="1" IndicatorColor="#FF4BACC6" Background="#FFFFFFFF" BorderBrush="#FFA93E3B" Foreground="#FFA6C170" FontSize="12" Width="27" Height="110" ScaleVisible="Hidden" Transparent="Hidden" ScaleColor="#FF4BACC6" IndicatorMargin="8,8,8,8" RequiresTransparency="True" ForceTransparency="False" FontFamily="Tahoma" FontStyle="Normal" Name="m_LinearMeter2" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="15" nacl:DelayInputEvents.DelayMouseInput="False" nac:EnabledProperties.EnabledDynamicsValue="True" Canvas.Left="529" Canvas.Top="225" Style="{nac1:StyleMarkupExtension Vintage_Compact}">
+      <nacc:LinearMeter.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc:LinearMeter.Resources>
+      <nacc:LinearMeter.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SAG_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc:LinearMeter.Value>
+    </nacc:LinearMeter>
+    <nacs1:Picture SymbolName="hand valve 2" Stretch="True" Name="m_Picture5" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="446" Canvas.Top="344">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA1_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="hand valve 3" Stretch="True" Name="m_Picture6" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="17" Canvas.Left="446" Canvas.Top="344">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA1_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri1 (2)" Stretch="True" Name="m_Picture7" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="486" Canvas.Top="120">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.TANK_DOLUM_2_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="hand valve 2" Stretch="True" Name="m_Picture9" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="446" Canvas.Top="308">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA2_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="hand valve 3" Stretch="True" Name="m_Picture10" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="446" Canvas.Top="308">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA2_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="hand valve 3" Stretch="True" Name="m_Picture11" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="486" Canvas.Top="344">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA2_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="hand valve 2" Stretch="True" Name="m_Picture12" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="486" Canvas.Top="344">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.BASMA_BOSALTMA2_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri2" Stretch="True" Name="m_Picture13" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="23" Canvas.Left="486" Canvas.Top="120">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.TANK_DOLUM_2_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri1 (2)" Stretch="True" Name="m_Picture8" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="450" Canvas.Top="120">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.TANK_DOLUM_1_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri2" Stretch="True" Name="m_Picture14" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="450" Canvas.Top="120">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.TANK_DOLUM_1_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri1 (2)" Stretch="True" Name="m_Picture15" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="468" Canvas.Top="143">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.DENGELEME_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri2" Stretch="True" Name="m_Picture16" Width="19" Height="17" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="26" Canvas.Left="468" Canvas.Top="143">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.DENGELEME_LOGO].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="42859629-water-drop-icon-liquid-sign-freshness-condensation-or-washing--stock-photo" Stretch="True" Name="m_Picture17" Width="78" Height="78" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="39" Canvas.Top="403">
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.LIKIT_BUTON" EventName="MouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Set Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.LIKIT_BUTON" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri1 (2)" Stretch="True" Name="m_Picture18" Width="15" Height="11" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="33" Canvas.Left="228" Canvas.Top="382">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.LIKIT_SEMBOL].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri2" Stretch="True" Name="m_Picture19" Width="15" Height="11" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="228" Canvas.Top="382">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.LIKIT_SEMBOL].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri1 (2)" Stretch="True" Name="m_Picture20" Width="15" Height="11" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="35" Canvas.Left="385" Canvas.Top="377">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.LIKIT_SEMBOL].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nacs1:Picture SymbolName="gri2" Stretch="True" Name="m_Picture21" Width="15" Height="11" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="36" Canvas.Left="385" Canvas.Top="377">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.LIKIT_SEMBOL].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs1:Picture>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Suffix=" bar " VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric" Width="120" Height="38" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="41" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="358" Canvas.Top="429">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SOL_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Suffix=" bar" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric1" Width="120" Height="38" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="42" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="486" Canvas.Top="429">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_SAG_BASINC].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Suffix=" bar" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric2" Width="120" Height="38" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="43" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="628" Canvas.Top="429">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.OKSIJEN_TANK_BASINCI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" Prefix="%" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric3" Width="120" Height="38" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="44" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="613" Canvas.Top="120">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.PSI_OKSIJEN_ORANI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nacs1:Picture SymbolName="adsız (1)" Stretch="True" Name="m_Picture22" Width="174" Height="121" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="45" nacb:BlinkProperties.BlinkInterval="1000" Canvas.Left="23" Canvas.Top="-3">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.LOGO_SEMBOL].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>False</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Show Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Show" ObjectName="MAN_AYAR" EventName="MouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.20.2296.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <naı:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                  </naı:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+    </nacs1:Picture>
+    <nac:Label AutoStretchFont="False" Text="OXYVITAL SISTEM İZLEME EKRANI" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Arial Black" FontSize="20" FontStyle="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="46" Canvas.Left="228" Canvas.Top="40">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="SU BOŞALTIM TEST" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="12" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="3,0,3,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="47" Canvas.Left="108" Canvas.Top="453">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nacs1:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox2" Width="70" Height="70" RenderTransform="Identity" Panel.ZIndex="48" Canvas.Left="719" Canvas.Top="6">
+      <naı:ActionProperties.Actions>
+        <naı:ActionList>
+          <nata:Action Name="Show Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Show" ObjectName="MENU" EventName="MouseEnter" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.20.2296.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <naı:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                  </naı:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı:ActionList>
+      </naı:ActionProperties.Actions>
+      <Viewbox Width="201.494" Height="215.834">
+        <Canvas Width="201.494" Height="215.834">
+          <Canvas>
+            <Canvas>
+              <Canvas>
+                <Path Data="F1M73.485,2L73.485,2C71.757,2,69.994,2.746,68.246,4.217L4.586,57.8C2.307,59.719 1,62.429 1,65.234 1,68.041 2.307,70.751 4.586,72.67L68.245,126.254C69.994,127.726 71.757,128.471 73.485,128.471 76.372,128.471 79.285,126.215 79.285,121.176L79.285,97.744C96.15,99.053 138.768,104.666 146.246,127.958 149.035,136.646 146.649,147.268 139.155,159.523 130.089,174.352 113.508,191.622 89.873,210.856L93.171,215.834C93.461,215.681 122.448,200.229 149.986,178.429 166.25,165.553 178.868,152.991 187.487,141.091 198.544,125.825 203.09,111.513 201,98.55 198.652,83.997 187.959,71.24 169.22,60.633 148.982,49.178 118.735,39.906 79.285,33.062L79.285,9.295C79.285,4.256,76.372,2,73.485,2L73.485,2z M73.485,5C75.167,5,76.285,6.516,76.285,9.295L76.285,35.592C341.92,80.549 91.766,213.184 91.766,213.184 227.945,102.363 85.414,95.116 76.285,94.53L76.285,121.176C76.285,123.955 75.167,125.471 73.485,125.471 72.53,125.471 71.394,124.982 70.177,123.959L6.518,70.375C3.161,67.548,3.161,62.922,6.518,60.095L70.177,6.513C71.394,5.489,72.531,5,73.485,5" Fill="#FF398A26" />
+              </Canvas>
+              <Canvas>
+                <Path Data="F1M89.819,210.021C134.005,174.063 153.134,145.625 146.673,125.499 138.662,100.542 92.616,95.219 76.785,94.13L76.785,119.176C76.785,123.453 74.468,124.971 72.485,124.971 71.139,124.971 69.661,124.326 68.211,123.106L4.552,69.522C2.584,67.865 1.5,65.632 1.5,63.234 1.5,60.837 2.584,58.604 4.552,56.948L68.211,3.365C69.662,2.145 71.139,1.5 72.485,1.5 74.469,1.5 76.785,3.018 76.785,7.295L76.785,32.326C152.764,45.344 193.718,67.03 198.519,96.789 202.174,119.451 185.196,145.85 148.054,175.252 120.623,196.968 91.757,212.356 91.469,212.509L89.819,210.021z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="27.112,-126.413" EndPoint="224.617,-126.413" MappingMode="Absolute" Transform="1,0,0,-1,-25.612,-19.408">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF4AA82C" Offset="0" />
+                          <GradientStop Color="#FF9CC010" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+                <Path Data="F1M72.485,0L72.485,0C70.757,0,68.994,0.746,67.246,2.217L3.586,55.8C1.307,57.719 0,60.429 0,63.234 0,66.041 1.307,68.751 3.586,70.67L67.245,124.254C68.994,125.726 70.757,126.471 72.485,126.471 75.372,126.471 78.285,124.215 78.285,119.176L78.285,95.744C95.15,97.053 137.768,102.666 145.246,125.958 148.035,134.646 145.649,145.268 138.155,157.523 129.089,172.352 112.508,189.622 88.873,208.856L92.171,213.834C92.461,213.681 121.448,198.229 148.986,176.429 165.25,163.553 177.868,150.991 186.487,139.091 197.544,123.825 202.09,109.513 200,96.55 197.652,81.997 186.959,69.24 168.22,58.633 147.982,47.178 117.735,37.906 78.285,31.062L78.285,7.295C78.285,2.256,75.372,0,72.485,0L72.485,0z M72.485,3C74.167,3,75.285,4.516,75.285,7.295L75.285,33.592C340.92,78.549 90.766,211.184 90.766,211.184 226.945,100.363 84.414,93.116 75.285,92.53L75.285,119.176C75.285,121.955 74.167,123.471 72.485,123.471 71.53,123.471 70.394,122.982 69.177,121.959L5.518,68.375C2.161,65.548,2.161,60.922,5.518,58.095L69.177,4.513C70.394,3.489,71.531,3,72.485,3" Fill="#FF398A26" />
+                <Path Data="F1M131.986,179.243C150.971,157.376 157.823,138.966 152.863,123.513 143.643,94.793 96.053,88.807 76.02,87.566L70.285,87.198 70.285,116.355 8.738,64.55C8.402,64.267 8,63.808 8,63.235 8,62.662 8.401,62.204 8.738,61.92L70.285,10.116 70.285,37.817 74.45,38.521C147.141,50.824 187.825,71.33 192.101,97.82 196.152,122.91 168.248,150.96 144.125,170.072 140.08,173.278 135.999,176.346 131.986,179.243z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="33.612,-114.088" EndPoint="218.107,-114.088" MappingMode="Absolute" Transform="1,0,0,-1,-25.612,-19.408">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF9CC010" Offset="0" />
+                          <GradientStop Color="#FF4AA82C" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs1:SymbolViewbox>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="String" MaxNumberOfCharacters="30" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontFamily="Tahoma" UndoLimit="1" Transparent="Hidden" BorderThickness="1,1,1,1" Foreground="#FF000000" FontSize="12" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric4" Width="299" Height="34" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="49" KeyboardNavigation.TabNavigation="None" Canvas.Left="23" Canvas.Top="94">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemTagDateTime].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.BorderBrush>
+        <SolidColorBrush Color="#FF000000" Opacity="0" />
+      </nac:AnalogNumericFX.BorderBrush>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" Opacity="0">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Label Text="SAFLIK" Background="#00FFFFFF" Foreground="#FF4BACC6" FontFamily="Tahoma" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text7" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="50" Canvas.Left="639" Canvas.Top="88">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:AnalogNumericFX AutoStretchFont="False" DisplayFormat="Decimal" NumberOfDecimals="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Tahoma" UndoLimit="1" Transparent="Visible" IsReadOnly="True" BorderBrush="#FF000000" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" Padding="2,2,2,2" Name="m_AnalogNumeric5" Width="120" Height="38" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="51" KeyboardNavigation.TabNavigation="None" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="20" Canvas.Top="203">
+      <nac:AnalogNumericFX.Resources>
+        <ResourceDictionary>
+          <nacc1:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:AnalogNumericFX.Resources>
+      <nac:AnalogNumericFX.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.AKIS_DEGERI].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>0</Binding.FallbackValue>
+        </Binding>
+      </nac:AnalogNumericFX.Value>
+      <nac:AnalogNumericFX.BevelEffectInfo>
+        <nacb1:BevelEffectInfo Style="None" Width="2" />
+      </nac:AnalogNumericFX.BevelEffectInfo>
+      <nac:AnalogNumericFX.TextDecorations>
+        <TextDecorationCollection />
+      </nac:AnalogNumericFX.TextDecorations>
+      <nac:AnalogNumericFX.Background>
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FF3A4E63" Offset="0" />
+              <GradientStop Color="#FF909DAA" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:AnalogNumericFX.Background>
+      <naı:ActionProperties.Actions>
+        <naı:ActionList />
+      </naı:ActionProperties.Actions>
+    </nac:AnalogNumericFX>
+    <nac:Label Text="O2 AKIŞ " Background="#00FFFFFF" Foreground="#FF4BACC6" FontFamily="Tahoma" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text8" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="52" Canvas.Left="35" Canvas.Top="165">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.31.67.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Tags" TargetProperty="MANUEL" Source="Controller1.DataItem1" />
+        <Item Target="Tags" TargetProperty="OTOMATIK" Source="Controller1.DataItem2" />
+        <Item Target="Tags" TargetProperty="OKSIJEN_TANK_BASINCI" Source="Controller1.DataItem3" />
+        <Item Target="Tags" TargetProperty="PSI_SAG_BASINC" Source="Controller1.DataItem4" />
+        <Item Target="Tags" TargetProperty="PSI_SOL_BASINC" Source="Controller1.DataItem5" />
+        <Item Target="Tags" TargetProperty="PSI_OKSIJEN_ORANI" Source="Controller1.DataItem6" />
+        <Item Target="Tags" TargetProperty="PSA_SAG_KOLON_BASINC_SET" Source="Controller1.DataItem7" />
+        <Item Target="Tags" TargetProperty="PSA_SOL_KOLON_BASINC_SET" Source="Controller1.DataItem8" />
+        <Item Target="Tags" TargetProperty="BEKLEME_TMR" Source="Controller1.DataItem9" />
+        <Item Target="Tags" TargetProperty="BASMA_BOSALTMA1_LOGO" Source="Controller1.DataItem10" />
+        <Item Target="Tags" TargetProperty="BASMA_BOSALTMA2_LOGO" Source="Controller1.DataItem11" />
+        <Item Target="Tags" TargetProperty="DENGELEME_LOGO" Source="Controller1.DataItem12" />
+        <Item Target="Tags" TargetProperty="TANK_DOLUM_1_LOGO" Source="Controller1.DataItem13" />
+        <Item Target="Tags" TargetProperty="TANK_DOLUM_2_LOGO" Source="Controller1.DataItem14" />
+        <Item Target="Tags" TargetProperty="DENGELEME_TMR" Source="Controller1.DataItem15" />
+        <Item Target="Tags" TargetProperty="PSA_DONGU_SAYISI" Source="Controller1.DataItem16" />
+        <Item Target="Tags" TargetProperty="SOL_KOLON_DOLDURMA_SET" Source="Controller1.DataItem17" />
+        <Item Target="Tags" TargetProperty="SAG_KOLON_DOLDURMA_SET" Source="Controller1.DataItem18" />
+        <Item Target="Tags" TargetProperty="LIKIT_CALISMA_SURESI_DK" Source="Controller1.DataItem19" />
+        <Item Target="Tags" TargetProperty="LIKIT_BUTON" Source="Controller1.DataItem20" />
+        <Item Target="Tags" TargetProperty="LIKIT_CALISMA_SURESI_SN" Source="Controller1.DataItem21" />
+        <Item Target="Tags" TargetProperty="LIKIT_SEMBOL" Source="Controller1.DataItem22" />
+        <Item Target="Tags" TargetProperty="LOGO_SEMBOL" Source="Controller1.DataItem23" />
+        <Item Target="Tags" TargetProperty="RESET" Source="Controller1.DataItem24" />
+        <Item Target="Tags" TargetProperty="CALISMA_SAATI_SIFIRLA" Source="Controller1.DataItem25" />
+        <Item Target="Tags" TargetProperty="CALISMA_SANIYE" Source="Controller1.DataItem26" />
+        <Item Target="Tags" TargetProperty="CALISMA_DAKIKA" Source="Controller1.DataItem27" />
+        <Item Target="Tags" TargetProperty="CALISMA_SAAT" Source="Controller1.DataItem28" />
+        <Item Target="Tags" TargetProperty="CALISMA_SAATI_SET" Source="Controller1.DataItem29" />
+        <Item Target="Tags" TargetProperty="ALARM_CALISMA_SAATI" Source="Controller1.DataItem30" />
+        <Item Target="Tags" TargetProperty="AKIS_UST" Source="Controller1.DataItem31" />
+        <Item Target="Tags" TargetProperty="AKIS_ALT" Source="Controller1.DataItem32" />
+        <Item Target="Tags" TargetProperty="AKIS_BASINC_UST" Source="Controller1.DataItem33" />
+        <Item Target="Tags" TargetProperty="AKIS_BASINC_ALT" Source="Controller1.DataItem34" />
+        <Item Target="Tags" TargetProperty="AKIS_DEGERI" Source="Controller1.DataItem35" />
+        <Item Target="Tags" TargetProperty="MAN_K1_BASMA" Source="Controller1.DataItem36" />
+        <Item Target="Tags" TargetProperty="MAN_K2_BASMA" Source="Controller1.DataItem37" />
+        <Item Target="Tags" TargetProperty="MAN_K1_DOLDURMA" Source="Controller1.DataItem38" />
+        <Item Target="Tags" TargetProperty="MAN_K2_DOLDURMA" Source="Controller1.DataItem39" />
+        <Item Target="Tags" TargetProperty="MAN_DENGELEME" Source="Controller1.DataItem40" />
+        <Item Target="Tags" TargetProperty="MAN_LIKIT_BOSALTMA" Source="Controller1.DataItem41" />
+        <Item Target="Tags" TargetProperty="OTO_BASINC_START_SET" Source="Controller1.DataItem42" />
+        <Item Target="Tags" TargetProperty="OTO_BASINC_STOP_SET" Source="Controller1.DataItem43" />
+        <Item Target="Tags" TargetProperty="O2_SAFLIK_AKIM_UST" Source="Controller1.DataItem44" />
+        <Item Target="Tags" TargetProperty="O2_SAFLIK_AKIM_ALT" Source="Controller1.DataItem45" />
+        <Item Target="Tags" TargetProperty="O2_SAFLIK_UST" Source="Controller1.DataItem46" />
+        <Item Target="Tags" TargetProperty="O2_SAFLIK_ALT" Source="Controller1.DataItem47" />
+        <Item Target="Tags" TargetProperty="OTO_SAFLIK_UYARI_SET" Source="Controller1.DataItem48" />
+        <Item Target="Tags" TargetProperty="OTO_SAFLIK_STOP_SET" Source="Controller1.DataItem49" />
+        <Item Target="Tags" TargetProperty="ALARM_SAFLIK_DUSTU" Source="Controller1.DataItem50" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items />
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

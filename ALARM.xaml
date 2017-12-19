@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.20.2296.0'?>
+<nacs:ScreenWindow Topmost="False" Title="ALARM" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="SingleBorder" ScreenSize="800, 480" StyleName="Default" Width="800" Height="480" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacl="clr-namespace:Neo.ApplicationFramework.Controls.Logic;assembly=Controls" xmlns:naı="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=InterfacesCF" xmlns:nacl1="clr-namespace:Neo.ApplicationFramework.Controls.Logic;assembly=ControlsCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:naı1="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" x:Class="Neo.ApplicationFramework.Generated.ALARM">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="480" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nac:AlarmViewerFX GridBackground="#FF64B7CD" ColumnHeaderBackground="#FF5B92D6" CustomizeScrollbarColor="False" ButtonWidth="130" ButtonHeight="30" ButtonPosition="Top" ButtonMargin="5" ButtonBackground="#FFE2E2E2" FilterButtonIsVisible="False" PauseButtonIsVisible="False" ColumnHeadersVisible="True" SummaryRowVisible="False" SortColumn="ActiveTime" SortDirection="Descending" ContextMenusEnabled="True" MaximumAlarmViewerRows="100" SelectedBorderColor="#FF008000" ServerPort="0" ScreenOwnerName="ALARM" BorderBrush="#FF81A045" Background="#FFFFFFFF" FontFamily="Tahoma" FontSize="18" Name="m_AlarmViewer" Width="783" Height="369" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" nacl:DelayInputEvents.DelayMouseInput="False" Canvas.Left="3" Canvas.Top="16" Style="{nac1:StyleMarkupExtension Standard}">
+      <nac:AlarmViewerFX.VisibleColumns>
+        <x:Array Type="naı:IColumnInfo">
+          <nacl1:AlarmColumnInfo MappingName="DisplayState" HeaderName="State" ColumnWidth="80" />
+          <nacl1:AlarmColumnInfo MappingName="ActiveTime" HeaderName="Active Time" ColumnWidth="150" />
+          <nacl1:AlarmColumnInfo MappingName="DisplayText" HeaderName="Text" ColumnWidth="570" />
+        </x:Array>
+      </nac:AlarmViewerFX.VisibleColumns>
+      <nac:AlarmViewerFX.AlarmEventFilter>
+        <nacl1:AlarmEventFilter MaximumAlarmRows="100">
+          <nacl1:AlarmEventFilter.Groups>
+            <nacl1:AlarmEventFilterGroup Name="Default" Enabled="True" ShowActiveAlarms="True" ShowNormalAlarms="True" ShowAcknowlegedAlarms="True" ShowInactiveAlarms="True" />
+          </nacl1:AlarmEventFilter.Groups>
+        </nacl1:AlarmEventFilter>
+      </nac:AlarmViewerFX.AlarmEventFilter>
+    </nac:AlarmViewerFX>
+    <nacs1:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox2" Width="70" Height="70" RenderTransform="Identity" Panel.ZIndex="2" Canvas.Left="716" Canvas.Top="405">
+      <naı1:ActionProperties.Actions>
+        <naı1:ActionList>
+          <nata:Action Name="Show Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Show" ObjectName="MENU" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.20.2296.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <naı1:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                  </naı1:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </naı1:ActionList>
+      </naı1:ActionProperties.Actions>
+      <Viewbox Width="201.494" Height="215.834">
+        <Canvas Width="201.494" Height="215.834">
+          <Canvas>
+            <Canvas>
+              <Canvas>
+                <Path Data="F1M73.485,2L73.485,2C71.757,2,69.994,2.746,68.246,4.217L4.586,57.8C2.307,59.719 1,62.429 1,65.234 1,68.041 2.307,70.751 4.586,72.67L68.245,126.254C69.994,127.726 71.757,128.471 73.485,128.471 76.372,128.471 79.285,126.215 79.285,121.176L79.285,97.744C96.15,99.053 138.768,104.666 146.246,127.958 149.035,136.646 146.649,147.268 139.155,159.523 130.089,174.352 113.508,191.622 89.873,210.856L93.171,215.834C93.461,215.681 122.448,200.229 149.986,178.429 166.25,165.553 178.868,152.991 187.487,141.091 198.544,125.825 203.09,111.513 201,98.55 198.652,83.997 187.959,71.24 169.22,60.633 148.982,49.178 118.735,39.906 79.285,33.062L79.285,9.295C79.285,4.256,76.372,2,73.485,2L73.485,2z M73.485,5C75.167,5,76.285,6.516,76.285,9.295L76.285,35.592C341.92,80.549 91.766,213.184 91.766,213.184 227.945,102.363 85.414,95.116 76.285,94.53L76.285,121.176C76.285,123.955 75.167,125.471 73.485,125.471 72.53,125.471 71.394,124.982 70.177,123.959L6.518,70.375C3.161,67.548,3.161,62.922,6.518,60.095L70.177,6.513C71.394,5.489,72.531,5,73.485,5" Fill="#FF398A26" />
+              </Canvas>
+              <Canvas>
+                <Path Data="F1M89.819,210.021C134.005,174.063 153.134,145.625 146.673,125.499 138.662,100.542 92.616,95.219 76.785,94.13L76.785,119.176C76.785,123.453 74.468,124.971 72.485,124.971 71.139,124.971 69.661,124.326 68.211,123.106L4.552,69.522C2.584,67.865 1.5,65.632 1.5,63.234 1.5,60.837 2.584,58.604 4.552,56.948L68.211,3.365C69.662,2.145 71.139,1.5 72.485,1.5 74.469,1.5 76.785,3.018 76.785,7.295L76.785,32.326C152.764,45.344 193.718,67.03 198.519,96.789 202.174,119.451 185.196,145.85 148.054,175.252 120.623,196.968 91.757,212.356 91.469,212.509L89.819,210.021z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="27.112,-126.413" EndPoint="224.617,-126.413" MappingMode="Absolute" Transform="1,0,0,-1,-25.612,-19.408">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF4AA82C" Offset="0" />
+                          <GradientStop Color="#FF9CC010" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+                <Path Data="F1M72.485,0L72.485,0C70.757,0,68.994,0.746,67.246,2.217L3.586,55.8C1.307,57.719 0,60.429 0,63.234 0,66.041 1.307,68.751 3.586,70.67L67.245,124.254C68.994,125.726 70.757,126.471 72.485,126.471 75.372,126.471 78.285,124.215 78.285,119.176L78.285,95.744C95.15,97.053 137.768,102.666 145.246,125.958 148.035,134.646 145.649,145.268 138.155,157.523 129.089,172.352 112.508,189.622 88.873,208.856L92.171,213.834C92.461,213.681 121.448,198.229 148.986,176.429 165.25,163.553 177.868,150.991 186.487,139.091 197.544,123.825 202.09,109.513 200,96.55 197.652,81.997 186.959,69.24 168.22,58.633 147.982,47.178 117.735,37.906 78.285,31.062L78.285,7.295C78.285,2.256,75.372,0,72.485,0L72.485,0z M72.485,3C74.167,3,75.285,4.516,75.285,7.295L75.285,33.592C340.92,78.549 90.766,211.184 90.766,211.184 226.945,100.363 84.414,93.116 75.285,92.53L75.285,119.176C75.285,121.955 74.167,123.471 72.485,123.471 71.53,123.471 70.394,122.982 69.177,121.959L5.518,68.375C2.161,65.548,2.161,60.922,5.518,58.095L69.177,4.513C70.394,3.489,71.531,3,72.485,3" Fill="#FF398A26" />
+                <Path Data="F1M131.986,179.243C150.971,157.376 157.823,138.966 152.863,123.513 143.643,94.793 96.053,88.807 76.02,87.566L70.285,87.198 70.285,116.355 8.738,64.55C8.402,64.267 8,63.808 8,63.235 8,62.662 8.401,62.204 8.738,61.92L70.285,10.116 70.285,37.817 74.45,38.521C147.141,50.824 187.825,71.33 192.101,97.82 196.152,122.91 168.248,150.96 144.125,170.072 140.08,173.278 135.999,176.346 131.986,179.243z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="33.612,-114.088" EndPoint="218.107,-114.088" MappingMode="Absolute" Transform="1,0,0,-1,-25.612,-19.408">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FF9CC010" Offset="0" />
+                          <GradientStop Color="#FF4AA82C" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs1:SymbolViewbox>
+    <nacs1:Picture SymbolName="12312313121" Stretch="True" Name="m_Picture1" Width="216" Height="70" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" nacb:BlinkProperties.BlinkInterval="1200" Canvas.Left="15" Canvas.Top="393">
+      <nacs1:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="IsBlinkEnabledConverter" DefaultValue="False" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs1:Picture.Resources>
+      <nacb:BlinkProperties.IsBlinkEnabled>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.MANUEL].Value" Converter="{StaticResource IsBlinkEnabledConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>False</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.IsBlinkEnabled>
+    </nacs1:Picture>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>
